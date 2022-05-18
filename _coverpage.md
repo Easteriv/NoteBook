@@ -1,4 +1,4 @@
-![icon](https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/images/icon.png)
+![icon](https://cdn.omsear.com/docsify/icon.png)
 
 ## PYTHON WIKI
 

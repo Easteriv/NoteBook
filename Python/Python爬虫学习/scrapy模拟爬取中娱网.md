@@ -26,7 +26,7 @@ scrapy genspider yule news.yule.com.cn
 
 - 在`yule.py`编写页面解析逻辑，本文以[http://news.yule.com.cn/yingshi/](http://news.yule.com.cn/yingshi/)为例
 
-![解析逻辑](https://cdn.omsear.com/docsify/img/2.png)
+![解析逻辑](https://cdn.omsear.com/docsify/img/06.png)
 - scrapy.Spider爬虫类中必须有名为parse的解析
 - 如果网站结构层次比较复杂，也可以自定义其他解析函数
 - 在解析函数中提取的url地址如果要发送请求，则必须属于allowed_domains范围内，但是start_urls中的url地址不受这个限制

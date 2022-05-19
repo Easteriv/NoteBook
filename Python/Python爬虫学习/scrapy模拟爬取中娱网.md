@@ -25,25 +25,8 @@ scrapy genspider yule news.yule.com.cn
 ## 解析页面
 
 - 在`yule.py`编写页面解析逻辑，本文以[http://news.yule.com.cn/yingshi/](http://news.yule.com.cn/yingshi/)为例
-```python
-import scrapy
-class YuleSpider(scrapy.Spider):
-    name = 'yule'
-    allowed_domains = ['news.yule.com.cn']
-    start_urls = ['http://news.yule.com.cn/yingshi/']
-    def parse(self, response, **kwargs):
-        li_list = response.xpath("//div[@class='MBL']/ul//li")
-        for li in li_list:
-            item = {}
-            item['cover_img'] = li.xpath("./div[@class='img']/a/img/@src").extract_first()
-            item['title_name'] = li.xpath("./div[@class='titname']/a/text()").extract_first().strip()
-            item['tag'] = li.xpath("./div[@class='other']/span[@id='catname']/a/text()").extract_first()
-            item['time'] = li.xpath("./div[@class='other']/span[@id='time']/text()").extract_first().strip()
-            yield item
-```
 
-
-
+![解析逻辑](https://cdn.omsear.com/docsify/img/2.png)
 - scrapy.Spider爬虫类中必须有名为parse的解析
 - 如果网站结构层次比较复杂，也可以自定义其他解析函数
 - 在解析函数中提取的url地址如果要发送请求，则必须属于allowed_domains范围内，但是start_urls中的url地址不受这个限制
@@ -54,23 +37,9 @@ class YuleSpider(scrapy.Spider):
 ## 数据清洗
 
 - 数据管道`pipelines.py`中编写数据清洗逻辑  本文暂时保存在文本文件中，后续可替换至数据库等存储中间件
-```python
-# Define your item pipelines here
-#
-# Don't forget to add your pipeline to the ITEM_PIPELINES setting
-# See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#
-# useful for handling different item types with a single interface
-import json
-class YulespiderPipeline:
-    def process_item(self, item, spider):
-        with open('data.txt','a+',encoding='utf8') as f:
-            # json.dump(item, f,ensure_ascii=False, indent=2)
-            data = json.dumps(item,ensure_ascii=False,indent=2)
-            f.write(data+","+"\n")
-        return item 
-```
-<a name="fE2m4"></a>
+
+![数据清洗](https://cdn.omsear.com/docsify/img/03.png)
+
 ## 启用管道
 
 - 在`settings.py`中启用管道配置
@@ -97,40 +66,14 @@ scrapy crawl yule --nolog
 1. 使用scrapy的一些特定组件需要Item做支持，如scrapy的ImagesPipeline管道类
 
 在`items.py`文件中定义要提取的字段，示例：
-```python
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+![数据建模](https://cdn.omsear.com/docsify/img/04.png)
 
-
-class YulespiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    cover_img = scrapy.Field()
-    title_name = scrapy.Field()
-    tag = scrapy.Field()
-    time = scrapy.Field()
-
-```
-<a name="GUqlz"></a>
 ## 翻页请求
 在`yule.py`文件编写翻页代码
-```python
-        ## 当前页
-        current_page = response.xpath("//div[@id='pages']/span/text()").extract_first()
-        ##最后一页页码
-        last_page = response.xpath("//div[@id='pages']/a[last()-1]/text()").extract_first()
-        if int(current_page) != last_page:
-            ## 获取下一页url
-            url = response.xpath("//a[@class='a1'][3]/@href").extract_first()
-            next_url = f'http://news.yule.com.cn{url}'
-            next_page = int(current_page)
-            print(f'开始抓取{next_page},链接地址为:{next_url}')
-            yield scrapy.Request(next_url,callback=self.parse)
-```
-<a name="ni3ro"></a>
+
+![完善翻页](https://cdn.omsear.com/docsify/img/05.png)
+
 ## 关于scrapy.Request
 
 ```python

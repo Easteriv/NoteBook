@@ -20,7 +20,7 @@ scrapy startproject yuleSpider
 ```python
 scrapy genspider yule news.yule.com.cn
 ```
-执行成功<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1385618/1652943963800-0ae3510b-9018-4cc0-96c5-f95438e9460a.png#clientId=u1a03f768-df1d-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=524&id=u98560e8e&margin=%5Bobject%20Object%5D&name=image.png&originHeight=524&originWidth=1598&originalType=binary&ratio=1&rotation=0&showTitle=false&size=96217&status=done&style=none&taskId=u7363f3ad-9f2d-45c2-8a2c-50dbec75cfd&title=&width=1598)
+执行成功<br />![image.png](https://cdn.omsear.com/docsify/img/01.png)
 <a name="R3UVd"></a>
 ## 解析页面
 

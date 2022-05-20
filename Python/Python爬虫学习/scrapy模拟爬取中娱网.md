@@ -102,3 +102,8 @@ scrapy.Request(url[,callback,method="GET",headers,body,cookies,meta,dont_filter=
 - meta参数是一个字典
 - meta字典中有一个固定的键proxy，表示代理ip
 
+## Meta传递参数
+- 数据建模添加字段
+- 构建详情页GET请求
+
+![最终代码](https://cdn.omsear.com/docsify/img/07.png)

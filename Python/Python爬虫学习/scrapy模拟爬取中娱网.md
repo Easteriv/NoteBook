@@ -108,7 +108,7 @@ scrapy.Request(url[,callback,method="GET",headers,body,cookies,meta,dont_filter=
 
 ![最终代码](https://cdn.omsear.com/docsify/img/07.png)
 
-1. yield scrapy.Request(url, callback=self.parse_detail, meta={})
-2. 利用meta参数在不同的解析函数中传递数据:
-3. 通过前一个解析函数 yield scrapy.Request(url, callback=self.xxx, meta={}) 来传递meta
-4. 在self.xxx函数中 response.meta.get('key', '') 或 response.meta['key'] 的方式取出传递的数据
+- yield scrapy.Request(url, callback=self.parse_detail, meta={})
+- 利用meta参数在不同的解析函数中传递数据:
+- 通过前一个解析函数 yield scrapy.Request(url, callback=self.xxx, meta={}) 来传递meta
+- 在self.xxx函数中 response.meta.get('key', '') 或 response.meta['key'] 的方式取出传递的数据

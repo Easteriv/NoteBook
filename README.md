@@ -5,8 +5,8 @@
 
 <p>✍️&nbsp;&nbsp;杭漂，热爱计算机科学和IT互联网事业。曾梦想仗剑走天涯，后来bug太多没去成</p>
 <div align="left">
-<a href="https://github.com/Easteriv/NoteBook">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Easteriv&repo=NoteBook&theme=dark&bg_color=0d1117&hide_border=true" /></a>
+<a href="https://github.com/Easteriv/docsify">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Easteriv&repo=docsify&theme=dark&bg_color=0d1117&hide_border=true" /></a>
 </div>
 <hr/>
 <hr/>

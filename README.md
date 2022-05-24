@@ -1,7 +1,36 @@
-# 前言
 
-!> <b>说明</b>：做一个有趣的爱分享的人，记录自己感兴趣的事情。如果你喜欢这个文档网站欢迎到 [GitHub](https://github.com/Easteriv/NoteBook) 点个 Star
 
-* 爱分享，爱生活！在我眼里，`你永远是不一样的烟火`！觉得还不错的话，记得好好学习吖！
-* 本仓库建立的初衷是为了记录一路走来学习的计算机专业知识，方便之后复习与查看。`起于此，但不止于此`，在不断的摸索和完善，勤能补拙，相信一点点的积累最后汇聚成海！希望我的这个小小的计划，可以帮助到实力强大的你！`止于至善`  🧡🧡
+
+#  🙋 Hello
+
+<p>✍️&nbsp;&nbsp;杭漂，热爱计算机科学和IT互联网事业，睡觉爱好者!</p>
+<p>&emsp;&emsp;We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</p>
+<p>&emsp;&emsp;我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>
+
+<!-- 文档github -->
+<!--<div align="left">-->
+<!--<a href="https://github.com/Easteriv/NoteBook">-->
+<!--  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Easteriv&repo=NoteBook&theme=dark&bg_color=0d1117&hide_border=true" /></a>-->
+<!--</div>-->
+
+💪 正在学习: 
+
+&emsp;&emsp;
+![Python](https://img.shields.io/badge/-Python-pink?style=flat-square&logo=Python)
+
+🧠 计划学习:
+
+&emsp;&emsp;
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white)
+![Nodejs](https://img.shields.io/badge/-Nodejs-c0ebd?style=flat-square&logo=Node.js)
+![Qt](https://img.shields.io/badge/Qt-%23217346.svg?style=style=flat-square&logo=Qt&logoColor=white)
+
+🧰 常用的工具:
+
+&emsp;&emsp; 
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=style=flat-square&logo=linux&logoColor=black)
+![Google Chrome](https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=GoogleChrome&logoColor=white)
+![GitHub](https://img.shields.io/badge/-GitHub-pink?style=flat-square&logo=github)
+
+
 

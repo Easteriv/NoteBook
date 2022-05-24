@@ -2,7 +2,7 @@
 
 ## PYTHON WIKI
 
-- 做一个眼中有梁木的人，记录一路走来那些有趣的事情
+- ![icon](https://v2.jinrishici.com/one.svg)
 
 <br>
 
@@ -19,6 +19,7 @@
 
 <!-- 背景色 -->
 ![color](#fff)
+
 
 
 

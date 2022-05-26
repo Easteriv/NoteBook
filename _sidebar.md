@@ -1,3 +1,9 @@
+**一句话代码**
++ [simple Code](Python/Python常用代码/Simple_Code指北.md)
+
+**基础知识**
++ [1-sys.stdout学习](Python/Python基础记录/Python学习之sys.stdout.md)
+
 **数据库操作**
 + [1-peewee操作MySQL](Python/Python操作数据库/peewee操作MySql.md)
 **爬虫学习**

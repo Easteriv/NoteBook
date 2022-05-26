@@ -1,22 +1,5 @@
 # requests模块
 
-##### 知识点：
-
-- 掌握 headers参数的使用
-- 掌握 发送带参数的请求
-- 掌握 headers中携带cookie
-- 掌握 cookies参数的使用
-- 掌握 cookieJar的转换方法
-- 掌握 超时参数timeout的使用
-- 掌握 代理ip参数proxies的使用
-- 掌握 使用verify参数忽略CA证书
-- 掌握 requests模块发送post请求
-- 掌握 利用requests.session进行状态保持
-
-----
-
-> 前面我们了解了爬虫的基础知识，接下来我们来学习如何在代码中实现我们的爬虫
-
 
 
 ## 1. requests模块介绍
@@ -298,7 +281,7 @@ print(response.content)
 3. 输入账号密码点击登陆后，访问一个需要登陆后才能获取正确内容的url，比如点击右上角的Your profile访问`https://github.com/USER_NAME`
 4. 确定url之后，再确定发送该请求所需要的请求头信息中的User-Agent和Cookie
 
-![requests-3-2-1-4](.\images\requests-3-2-1-4.png)
+
 
 
 
@@ -330,8 +313,6 @@ print(resp.text)
 #### 3.3.3 运行代码验证结果
 
 > 在打印的输出结果中搜索title，html中的标题文本内容如果是你的github账号，则成功利用headers参数携带cookie，获取登陆后才能访问的页面
-
-![requests-3-2-3](.\images\requests-3-2-3.png)
 
 ----
 
@@ -448,7 +429,6 @@ response = requests.get(url, timeout=3)     # 设置超时时间
 1. 代理ip是一个ip，指向的是一个代理服务器
 2. 代理服务器能够帮我们向目标服务器转发请求
 
-![使用代理的过程](.\images\使用代理的过程.png)
 
 #### 3.7.2 正向代理和反向代理的区别
 
@@ -529,9 +509,7 @@ response = requests.get(url, timeout=3)     # 设置超时时间
 
 ### 3.8 使用verify参数忽略CA证书
 
-> 在使用浏览器上网的时候，有时能够看到下面的提示（2018年10月之前的12306网站）：
-
-![12306ssl错误](.\images\12306ssl错误.png)
+> 在使用浏览器上网的时候，有时能够看到下面的提示
 
 - 原因：该网站的CA证书没有经过【受信任的根证书颁发机构】的认证
 - **[关于CA证书以及受信任的根证书颁发机构点击了解更多](https://blog.csdn.net/yangyuge1987/article/details/79209473/)**，课上我们不做展开
@@ -592,15 +570,9 @@ response = requests.get(url,verify=False)
    ##### 思路分析
    1. 抓包确定请求的url地址
 
-       <img src="./images/king.jpeg" width = "70%" />
-
    2. 确定请求的参数
 
-       <img src="./images/formdata.jpeg" width = "70%" />
-
    3. 确定返回数据的位置
-
-       <img src="./images/responsedata.jpeg" width = "70%" />
 
    4. 模拟浏览器获取数据
 

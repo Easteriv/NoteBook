@@ -10,6 +10,7 @@
 + [1-requests模块学习](Python/Python爬虫学习/requests模块.md)
 + [2-简易爬虫学习-中娱网](Python/Python爬虫学习/scrapy模拟爬取中娱网.md)
 + [3-scrapy模拟登录](Python/Python爬虫学习/scrapy模拟登录.md)
++ [4-postman快速生成requests请求](Python/Python爬虫学习/postman快速生成request请求.md)
 **核心技术进阶**
 
 + [1-列表、字典、集合中根据条件筛选](Python/Python核心技术进阶/列表、字典、集合中根据条件筛选)

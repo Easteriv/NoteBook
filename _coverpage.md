@@ -1,6 +1,6 @@
 ![icon](https://cdn.omsear.com/docsify/icon.png)
 
-## PYTHON WIKI
+## OMSEAR WIKI
 
 - ![icon](https://v2.jinrishici.com/one.svg)
 

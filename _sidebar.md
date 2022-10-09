@@ -19,9 +19,5 @@
 + [3-字典根据值排序](Python/Python核心技术进阶/字典根据值排序.md)
 + [4-统计元素出现的频率](Python/Python核心技术进阶/统计元素出现的频率.md)
 
-**LINUX学习**
-
-+ [1-NGINX配置黑名单](Shell/Nginx动态配置黑名单.md)
-
   
 

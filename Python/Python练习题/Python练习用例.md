@@ -87,7 +87,6 @@ class student(object):
 
     def __repr__(self):
         return f'Student name is {self.name},age is {self.age}'
-
 if __name__ == '__main__':
     a = student('张三',14)
     print(a) # Student name is 张三,age is 14
@@ -130,8 +129,6 @@ class Student(object):
     @classmethod
     def getClass(cls):
         print(cls)
-
-
 if __name__ == '__main__':
     Student.getClass() # <class '__main__.Student'>
 ```
@@ -141,8 +138,6 @@ if __name__ == '__main__':
 class Student(object):
     def __init__(self):
         self.age = 13
-
-
 if __name__ == '__main__':
     s = Student()
     delattr(s,'age')
@@ -175,8 +170,6 @@ class Student(object):
 
     def say(self):
         return f'My name is :{self.name}'
-
-
 if __name__ == '__main__':
     print(dir(Student))
 ```
@@ -227,8 +220,6 @@ class Student(object):
     def __init__(self, name, age):
         self.name = name
         self.age = age
-
-
 if __name__ == '__main__':
     s = Student(name='hangman', age=12)
     print(getattr(s, 'age')) # 12
